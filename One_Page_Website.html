@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Page Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My One Page Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#video">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+        <h2>Home</h2>
+        <p>This is the home section of my one page website.</p>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div>
+            <h3>Mount Everest Base Camp</h3>
+            <!-- Use relative paths for images -->
+            <img src="images/mount-everest_small.jpg" class="thumbnail" alt="Mount Everest Base Camp">
+            <h3>Sunset over Paris</h3>
+            <img src="images/sunset-over-paris_small.jpg" class="thumbnail" alt="Sunset over Paris">
+
+            <!-- Additional Thumbnails for Lightbox -->
+            <img src="images/pic1_small.jpg" class="thumbnail" alt="Image 1">
+            <img src="images/pic2_small.jpg" class="thumbnail" alt="Image 2">
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="video">
+        <h2>Video</h2>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7AkbUfZjS5k" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+    
+    <!-- Link to the JavaScript file -->
+    <script src="JS/one_page_website.js"></script>
+</body>
+</html>
